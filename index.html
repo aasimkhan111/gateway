@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pay ₹100</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="text-align:center; margin-top:100px; font-family:sans-serif;">
+
+  <h2>₹100 पेमेंट करा</h2>
+  <p>Click the button below to pay via PhonePe / GPay</p>
+
+  <button onclick="pay()" 
+    style="padding:15px 30px; font-size:18px; background:#4CAF50; color:white; border:none; border-radius:8px;">
+    Pay ₹100
+  </button>
+
+  <script>
+    function pay() {
+      window.location.href = "upi://pay?pa=9552231018@ybl&pn=Aasim&am=100&cu=INR";
+    }
+  </script>
+
+</body>
+</html>
